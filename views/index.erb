@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Landing Page em Ruby</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans">
+
+    <nav class="p-6 bg-white shadow-sm flex justify-between items-center">
+        <div class="text-2xl font-bold text-red-600">RubyDev</div>
+        <div class="space-x-4">
+            <a href="#" class="hover:text-red-500">Sobre</a>
+            <a href="#" class="bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-700">Contato</a>
+        </div>
+    </nav>
+
+    <header class="max-w-5xl mx-auto py-20 px-6 text-center">
+        <h1 class="text-5xl md:text-6xl font-extrabold mb-6">
+            Construa o futuro com <span class="text-red-600">Ruby</span>
+        </h1>
+        <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+            Esta é uma landing page profissional servida pelo Sinatra. 
+            Simples, rápida e elegante, como toda aplicação Ruby deve ser.
+        </p>
+        <div class="mt-10 max-w-md mx-auto">
+            <form action="/contato" method="POST" class="flex flex-col sm:flex-row gap-2">
+                <input type="text" name="name" placeholder="Seu nome" required 
+                    class="flex-1 px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-red-500">
+                
+                <input type="email" name="email" placeholder="seu@email.com" required 
+                    class="flex-1 px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-red-500">
+                
+                <button type="submit" class="bg-red-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-red-700 transition">
+                    Cadastrar
+                </button>
+            </form>
+            <p class="text-sm text-gray-500 mt-4">Prometemos não enviar spam!</p>
+        </div>
+    </header>
+
+    <footer class="py-10 border-t border-gray-200 text-center text-gray-500">
+        <p>&copy; <%= Time.now.year %> RubyDev - Criado iniciando no mundo Ruby.</p>
+    </footer>
+
+</body>
+</html>

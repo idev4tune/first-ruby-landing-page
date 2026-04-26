@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 flex items-center justify-center h-screen">
+    <div class="text-center p-10 bg-white shadow-xl rounded-2xl">
+        <h1 class="text-3xl font-bold text-green-600 mb-4">Sucesso!</h1>
+        <p class="text-gray-700 text-lg">
+            Olá, <strong><%= @guest_name %></strong>!
+        </p>
+        <p class="text-gray-600">
+            Enviamos um link de confirmação para o endereço <em><%= @guest_email %></em>.
+        </p>
+        <a href="/" class="mt-6 inline-block text-red-600 font-semibold hover:underline">Voltar para o início</a>
+    </div>
+</body>
+</html>
